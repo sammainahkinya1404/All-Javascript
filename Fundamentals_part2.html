@@ -57,6 +57,32 @@ String split()
 <p>AND (&&)</p>
 <P>OR (||)</P>
 <P>NOT (!)</P>
+<h1>More Practise</h1>
+<label for="weather">Select the weather type today: </label>
+<select id="weather">
+  <option value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<h2></h2>
+<h1>Switch </h1>
+<p>The switch has one or more case blocks and an optional default.</p>
+<p>Example:</p>
+<p>switch(x){</p>
+  <p>case 'value 1':</p>
+  <p>....Code to execute......</p>
+  <p>break</p>
+  <p>case 'value2':</p>
+  <p>....Code to execute......</p>
+  <p>break</p>
+  <p>default:</p>
+  <p>....Code to execute......</p>
+  <p>[break]</p>
+  <p>}</p>
+
 
  <script>
     //creating Strings
@@ -103,19 +129,103 @@ const output = `I like the song ${song}. I gave it a score of ${
 }%.`;
 console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
 
-//Logical Operators
-//|| OR
-// alert( true || true );   // true
-// alert( false || true );  // true
-// alert( true || false );  // true
-// alert( false || false );// false
-// //&& AND
-// alert( true && true );   // true
-// alert( false && true );  // 
-// alert( true && false );  // true
-// alert( false && false );// false
+
+const select = document.querySelector("select");
+const para = document.querySelector("h2");
+
+select.addEventListener("change", setWeather);
+
+function setWeather() {
+  const choice = select.value;
+
+  if (choice === "sunny") {
+    para.textContent =
+      "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
+  } else if (choice === "rainy") {
+    para.textContent =
+      "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
+  } else if (choice === "snowing") {
+    para.textContent =
+      "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
+  } else if (choice === "overcast") {
+    para.textContent =
+      "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.";
+  } else {
+    para.textContent = "";
+  }
+}
+
+ var ans =25+22;
+switch(ans) {
+  case 47:
+    alert("Exactly");
+    break;
+    case 48:
+      alert("A little too high");
+      break;
+      default:
+        alert("What are those?");
+        
 
 
+ 
+
+}
+//Rewrite Switch into if else statements
+// switch (browser) {
+//   case 'Edge':
+//     alert( "You've got the Edge!" );
+//     break;
+
+//   case 'Chrome':
+//   case 'Firefox':
+//   case 'Safari':
+//   case 'Opera':
+//     alert( 'Okay we support these browsers too' );
+//     break;
+
+//   default:
+//     alert( 'We hope that this page looks ok!' );
+// }
+ var browser =prompt("Please Enter a browser:");
+ if (browser === 'Edge'){
+  alert("You've got the Edge!")
+ }
+ else if (browser === 'Chrome' ||'Firefox' ||'Safari' ||'Opera' ){
+  alert("Okay we support  these browsers too!")
+ }
+  else{
+    alert("We hope that this page looks ok!");
+  }
+  //Rewrite If into switch
+  // let a = +prompt('a?', '');
+
+// if (a == 0) {
+//   alert( 0 );
+// }
+// if (a == 1) {
+//   alert( 1 );
+// }
+
+// if (a == 2 || a == 3) {
+//   alert( '2,3' );
+// }
+
+var a=+prompt('a?','');
+switch (a){
+  case 0:
+    alert(0);
+    break;
+
+    case 1:
+      alert(1);
+      break;
+      case 2:
+      case 3:
+        alert(2,3);
+        break; 
+
+}
  </script>
   </body>
 </html>
