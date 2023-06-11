@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Fundamentals Part 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+ <h1>Strings</h1>
+ <p>Creating a Stirng</p>
+ <p>const string ="This is a String";</p>
+ <p>console.log(string);</p>
+ <h1>Single vs double quotation</h1>
+ <p>const st1='Single quotation';</p>
+ <p>const st2-"Double quotation";</p>
+ <p>console.log(st1);</p>
+ <p>console.log(st2);</p>
+ <h1>Concantenating Strings</h1>
+ <p>var greeting='hello';</p>
+ <p>const name ='Kinya';</p>
+ <p>greeting='hello,${name}';</p>
+ <button>Press Me</button>
+<h1>Numbers vs String</h1>
+<p>Number() this function convert any argument passed on it to number</p>
+<p>const mystring="Samson";</p>
+<p>const myNum=Number(mystring);</p>
+<p>console.log(typeof myNum);</p>
+<h1>toString() this function convert anything passed to it  to string</h1>
+<p>const myNumber=123;</p>
+<p>const myString=toString(myNumber);</p>
+<p>console.log(typeof myString);</p>
+<p>
+    String length
+String slice()
+String substring()
+String substr()
+String replace()
+String replaceAll()
+String toUpperCase()
+String toLowerCase()
+String concat()
+String trim()
+String trimStart()
+String trimEnd()
+String padStart()
+String padEnd()
+String charAt()
+String charCodeAt()
+String split()
+</p>
+<h1>Logical operators</h1>
+<p>AND (&&)</p>
+<P>OR (||)</P>
+<P>NOT (!)</P>
+
+ <script>
+    //creating Strings
+    const string="This Sam Kinyanjui";
+    console.log(string);
+    //checking if the above variable is a  string
+    const badSting=string;
+    console.log(badSting);
+    //Single vs double Quotation
+    //single-quotation
+    var st1='Single Quotation';
+    var st2="Double Quotation";
+    console.log(st1);
+    console.log(st2);
+    st1='Single quotation" but amemnded with"';
+    console.log(st1);
+    //String Concantenation
+   
+    const name="Kinya";
+   const greeting='Hello,'+ ""+name;
+    console.log(greeting);
+  
+    const button = document.querySelector("button");
+    function greetings(){
+        const name=prompt("What is Your Name:");
+        alert('hello,'+name+'Nice to see you!');
+    }
+    button.addEventListener("click",greetings);
+
+    //function Number()
+    const myString="Samson Kinyanjui";
+    const myNumber =Number(myString);
+    console.log( typeof myNumber);
+//function toString()
+const myNum=123;
+const mystring =toString(myNum);
+console.log( typeof mystring);
+//Embed expression on strings
+const song = "Fight the Youth";
+const score = 9;
+const highestScore = 10;
+const output = `I like the song ${song}. I gave it a score of ${
+  (score / highestScore) * 100
+}%.`;
+console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+
+//Logical Operators
+//|| OR
+// alert( true || true );   // true
+// alert( false || true );  // true
+// alert( true || false );  // true
+// alert( false || false );// false
+// //&& AND
+// alert( true && true );   // true
+// alert( false && true );  // 
+// alert( true && false );  // true
+// alert( false && false );// false
+
+
+ </script>
+  </body>
+</html>

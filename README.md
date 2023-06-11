@@ -1,7 +1,7 @@
 # All-Javascript
 ALL The Odin Project Javascript Course
 1.Fundamentals Part 1
-2.Fundamentals Part 2
+2.Fundamentals Part 2-10/06/2023
 3.Fundamentals Part 3
 4.Problem Solving
 5.Understanding Errors
